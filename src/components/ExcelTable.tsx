@@ -74,14 +74,6 @@ const ExcelTable: React.FC<ExcelTableProps> = ({ data, onDataChange }) => {
   };
 
   /**
-   * Detecta si un valor es un link
-   */
-  const isLink = (value: unknown): boolean => {
-    if (typeof value !== "string") return false;
-    return value.startsWith("http://") || value.startsWith("https://");
-  };
-
-  /**
    * Maneja el ordenamiento
    */
   const handleSort = (column: string) => {
